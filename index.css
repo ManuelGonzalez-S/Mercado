@@ -1,0 +1,264 @@
+/* Añade un tamaño fijo a la foto encontrada al principio de la pagina web */
+#logoprincipio{
+    height: 100px;
+    padding-top: 10px;
+}
+
+body div{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(32, 161, 35);
+}
+
+body nav{
+    padding-top: 10px;
+    width: 100%;
+    background-color: rgb(32, 161, 35);
+    padding-bottom: 5px;
+}
+
+body nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Modifica el contenido del nav */
+body nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+body nav ul li:hover{
+    background-color:green;
+}
+
+body nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Alinea el contenido dentro del main */
+main section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main section div{
+    background-color: white;
+    text-align: center;
+    width: 60%;
+}
+
+#nuestros_productos h1{
+    text-decoration: underline;
+}
+
+#divEscaparate{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#divEscaparate section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#escaparatefrutas{
+    height: 300px;
+    padding-bottom: 10px;
+}
+
+#productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    border-top: 1px solid black;
+}
+
+/* Modifica las card en el nivel más general */
+.fotoFruta{
+    width: 220px;
+    padding: 20px;
+    background-color: rgb(220, 220, 220);
+    box-shadow: 3px 3px 10px 1px rgb(0, 0, 0);
+    margin: 10px;
+    text-align: start;
+}
+
+.fotoFruta:hover{
+    background-color: rgb(197, 197, 197);
+}
+
+/* Da un tamaño fijo a las imagenes */
+.fotoFruta img{
+    height: 150px;
+}
+
+.fotoFruta strong{
+    padding-top: 10px;
+}
+
+.cantidades{
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+.cantidades div:nth-child(2n-1){
+   background-color: rgb(6, 186, 6);
+}
+
+.cantidades div:nth-child(2n-1):hover{
+    background-color:  rgb(2, 162, 2) ;
+}
+
+/* Modifica el boton de añadir al carrito */
+.añadircarro{
+    width: 60%;
+    height: 20px;
+    background-color: rgb(6, 186, 6);
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.añadircarro:hover{
+    background-color:  rgb(2, 162, 2) ;
+}
+
+#productos{
+    padding: 50px;
+}
+
+#productos section img{
+    width: 100%;
+}
+
+/* Centra las cards dentro de la sección */
+#productos_y_ofertas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#productos_y_ofertas h1{
+    text-decoration: underline;
+}
+
+#productos_y_ofertas section img{
+    width: 100%;
+}
+
+#imagenescaparate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Para una pantalla menor de 950 pixeles, modifica el diseño de la pagina web */
+@media screen and (max-width: 950px){
+    body nav ul li{
+        padding: 5px;
+    }
+    #frutasDeTemporada{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    flex-wrap: wrap;
+    }
+}
+
+/* Para una pantalla con un ancho mayor e 950 pixeles, modifica la pagina web */
+@media screen and (min-width:950px){
+
+    #logoprincipio{
+        width: 150px;
+        height: 150px;
+    }
+    
+    #frutasDeTemporada{
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    .añadircarro{
+        font-size: 15px;
+        height: 30px;
+    }
+
+    *{
+        font-size: 20px ;
+    }
+}
+
+#frutasDeTemporada img{
+    width: 300px;
+}
+
+#sobre_nosotros h1{
+    text-decoration: underline;
+}
+
+#sobre_nosotros div img{
+    width: 100%;
+}
+
+footer{
+    padding: 10px;
+    color: white;
+    background-color: rgb(32, 161, 35) ;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+footer div:first-child{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.apartadofooter{
+    height: 100%;
+}
+
+.contenidofooter{
+    flex-direction: column;
+}
+
+.contenidofooter div{
+    margin-top: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.carrito{
+    max-height: 100%;
+    max-width: 20px;
+
+    filter: invert(1);
+}
